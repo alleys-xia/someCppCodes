@@ -12,5 +12,9 @@ int main() {
 	}catch(std::out_of_range& e) {
 		std::cerr<<"Error: "<<e.what()<<std::endl;
 	}
+	std::sort(myArray.begin(), myArray.end(), [](int a,intb){return a<b});
+	for(int value:myArray) {
+		std::cout<<value<<" ";
+	}
 	return 0;
 }
